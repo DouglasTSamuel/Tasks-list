@@ -1,0 +1,59 @@
+.card-task {
+  background-color: aliceblue;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 8px 16px;
+
+  .left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    label {
+      text-decoration: none;
+    }
+
+    p {
+      margin: 0 10px;
+    }
+  }
+
+  label,
+  button {
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: 700;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 42px;
+  }
+
+  button {
+    min-width: 100px;
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(0.5) !important;
+    }
+  }
+}
+
+.isChecked {
+  opacity: 0.6;
+
+  p {
+    text-decoration: line-through;
+    ;
+  }
+
+  button {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,14 @@
+section {
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+
+  input {
+    height: 50px;
+    border-radius: 8px;
+    width: -webkit-fill-available;
+    margin-bottom: 2rem;
+    padding: 0 0 0 1rem;
+  }
+}

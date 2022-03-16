@@ -1,0 +1,9 @@
+<section>
+  <input type="text" placeholder="Search a task" (keyup)="filterTask($event)" />
+
+  <div class="container-tasks">
+    <ng-container *ngFor="let item of filteredTask">
+      <app-task [task]="item"></app-task>
+    </ng-container>
+  </div>
+</section>

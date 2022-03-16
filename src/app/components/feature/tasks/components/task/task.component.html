@@ -1,0 +1,9 @@
+<div class="card-task" [ngClass]="{ isChecked: this.task.completed }">
+  <aside class="left-side">
+    <label>{{ task.id }}</label>
+    <p>{{ task.description }}</p>
+  </aside>
+  <button type="button" (click)="toogleTask()">
+    {{ task.completed ? "Uncheck" : "Check" }}
+  </button>
+</div>
