@@ -28,7 +28,7 @@ export class TasksListComponent implements OnInit {
     { id: 6, description: 'Criar conteúdo da aula', completed: false },
   ];
 
-  filteredTask = this.tasks;
+  filteredTask:Array<Task> = this.tasks;
 
   filterTask(event: any) {
     const searchValue = event.target.value;

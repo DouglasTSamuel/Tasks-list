@@ -6,4 +6,11 @@
       <app-task [task]="item"></app-task>
     </ng-container>
   </div>
+
+  <div
+    [ngClass]="{ 'msg-error': filteredTask.length === 0 }"
+    *ngIf="filteredTask.length === 0"
+  >
+    <h3>No results were found for this search.</h3>
+  </div>
 </section>
