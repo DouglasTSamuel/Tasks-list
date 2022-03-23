@@ -1,6 +1,6 @@
+<app-header></app-header>
 <section>
   <input type="text" placeholder="Search a task" (keyup)="filterTask($event)" />
-
   <div class="container-tasks">
     <ng-container *ngFor="let item of filteredTask">
       <app-task [task]="item"></app-task>
@@ -14,3 +14,4 @@
     <h3>No results were found for this search.</h3>
   </div>
 </section>
+<app-footer></app-footer>

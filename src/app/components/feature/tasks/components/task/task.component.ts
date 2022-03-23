@@ -10,6 +10,7 @@ export class TaskComponent implements OnInit {
     id: 0,
     description: '',
     completed: false,
+    inclusionDate:''
   };
   constructor() {}
 

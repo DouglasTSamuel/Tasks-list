@@ -1,0 +1,48 @@
+section,
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 365px;
+}
+
+section {
+  margin: 0 auto;
+}
+
+form {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+
+  input,
+  button {
+    padding: 1rem;
+    border: 1px solid gray;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    width: -webkit-fill-available;
+  }
+
+  button {
+    margin-top: 1rem;
+
+    &:hover {
+      filter: brightness(0.9);
+      cursor: pointer;
+    }
+  }
+}
+
+a {
+  margin: 1rem 0 0 95%;
+  position: relative;
+  right: 0;
+
+  &:hover {
+    filter: brightness(0.9);
+    cursor: pointer;
+  }
+}
